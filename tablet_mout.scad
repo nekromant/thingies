@@ -6,7 +6,7 @@ length=105;
 screw_dist=76;
 thickness=5;
 drill_rad=1.5;
-base_thickness=2;
+base_thickness=3;
 
 
 module halfcircle(r1,r2,h) {
@@ -19,7 +19,10 @@ module halfcircle(r1,r2,h) {
 
 rm=23;
 rl=20;
-halfcircle(rl,rm);
+module part() {
+halfcircle(rl,rm,base_thickness);
 translate([0,0,28]) halfcircle(rm,rl,base_thickness);
 translate([-rm,0,0]) cube([rm*2,5,28+base_thickness]);
+}
 
+rotate([-90,0,0]) part();
