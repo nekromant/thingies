@@ -4,3 +4,6 @@
 [submodule "sywvlch"]
 	path = sywvlch
 	url = git://github.com/syvwlch/Thingiverse-Projects.git
+[submodule "font"]
+	path = font
+	url = git://github.com/pipakin/OpenSCAD-Font-Importer.git
