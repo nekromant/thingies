@@ -21,14 +21,14 @@ cylinder(
 
 difference() {
 gear(
-    number_of_teeth = 10,
-    circular_pitch=400,
-    hub_diameter = 7,
-    bore_diameter = 1,
+    number_of_teeth = 61,
+    circular_pitch=100,
+    hub_diameter = 33,
+    bore_diameter = 5.6,
     gear_thickness = 5,
-    rim_thickness = 5,
-    hub_thickness = 6,
+    rim_thickness = 8,
+    hub_thickness = 8,
     circles=0);
-stepper_mount(w=4);
+//stepper_mount(w=4);
 };
 ;
